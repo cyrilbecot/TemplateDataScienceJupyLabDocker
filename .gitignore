@@ -1,10 +1,19 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+*__pycache__*
 *.py[cod]
 *$py.class
 
+*.kate-swp
+
 # C extensions
 *.so
+
+# Kate swap files
+*.kate-swp
+
+# Backup files
+*~
+\#*\#
 
 # Distribution / packaging
 .Python
