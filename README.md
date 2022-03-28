@@ -5,7 +5,7 @@ Repository that contains the basic tests, hooks & setups to be used for any (jup
 Please have the following software to run all the tests :
 ``mypy black flake8 pre-commit``
 
-And run the following command upon downloading the repository : ``pre-commit install``
+And run the following command upon downloading the repository : ``pre-commit install ; pre-commit autoupdate``
 
 Then all the syntax text, reformating and sniffing will be done upon commiting.
 
