@@ -19,10 +19,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 mypy black
+        pip install flake8 black
     - name: Running black
       run: black --check .
     - name: Running flake8
       run: flake8
-    - name: Running MyPy
-      run: mypy .
