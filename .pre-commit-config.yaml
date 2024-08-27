@@ -1,25 +1,25 @@
 repos:
   - repo: https://github.com/asottile/pyupgrade
-    rev: v2.19.4
+    rev: v3.17.0
     hooks:
       - id: pyupgrade
         args: [ "--py38-plus" ]
   - repo: https://github.com/pre-commit/mirrors-isort
-    rev: 1ba6bfc # Use the revision sha / tag you want to point at
+    rev: v5.10.1 # Use the revision sha / tag you want to point at
     hooks:
       - id: isort
         args: ["--profile", "black"]
   - repo: https://github.com/psf/black
-    rev: 21.12b0
+    rev: 24.8.0
     hooks:
       - id: black
   - repo: https://github.com/pyCQA/flake8
-    rev: 4.0.1
+    rev: 7.1.1
     hooks:
       - id: flake8
         language_version: python3
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.0.1
+    rev: v4.6.0
     hooks:
       - id: check-docstring-first
       - id: check-json
@@ -30,7 +30,7 @@ repos:
       - id: trailing-whitespace
       - id: requirements-txt-fixer
   - repo: https://github.com/pre-commit/mirrors-pylint
-    rev: 56b3cb4
+    rev: v3.0.0a5
     hooks:
       - id: pylint
         exclude: ^tests/
@@ -39,7 +39,7 @@ repos:
           - --ignore-imports=yes
           - -d duplicate-code
   - repo: https://github.com/pre-commit/pygrep-hooks
-    rev: v1.9.0
+    rev: v1.10.0
     hooks:
       - id: python-check-mock-methods
       - id: python-use-type-annotations
