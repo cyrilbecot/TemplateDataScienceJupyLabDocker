@@ -1,4 +1,4 @@
-# Template_DataScience_JupyLab_Docker
+# template_datascience_jupylab_docker
 
 Repository that contains the basic tests, hooks & setups to be used for any (jupyter-lab centric) data science project
 
